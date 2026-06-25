@@ -1,15 +1,33 @@
-<h1>Directory sorter is a python script to sort stray files into folders.</h1>
-You can add custom folders to config and specify what extensions should go into them. 
-<h1>config guide</h1>  
+# Directory sorter
+
+Directory sorter is a Python script that sorts stray files into folders.
+
+You can add custom folders to the config and specify which file extensions should go into them.
+
+## Config guide
+
+```json
 {
-        "folders":{   
-            "folder1":["ext1","ext2"],  
-            "folder2":["ext3","ext4"]  
-        },  
-        "dirsToClean":["/home/dir2/","/home/dir2/",/home/dir3/]  
-    }  
----  
-**folders** - this is where you put what folders should be created or in which folders files should go.  
-**folder** - you put into square brackets **extensions** of files that should be moved into this folder    
-**dirsToClean** - directories on which script should work  
-        
+	"folders": {
+		"folder1": [
+			"ext1",
+			"ext2"
+		],
+		"folder2": [
+			"ext3",
+			"ext4"
+		]
+	},
+	"dirsToClean": [
+		"/home/dir1/",
+		"/home/dir2/",
+		"/home/dir3/"
+	]
+}
+```
+
+***
+
+- **folders** — defines which folders should be created or used and which file extensions belong in each folder.
+- **folder name** — inside each folder entry, put the file extensions in square brackets for files that should be moved there.
+- **dirsToClean** — directories on which script should work.
