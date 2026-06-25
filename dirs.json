@@ -1,3 +1,10 @@
 {
-    "dirsToClean":[]
-}
+        "folders":{
+            "photos":[".png",".jpeg",".gif",".webp",".heif",".avif"],
+            "videos":[".webm",".mkv",".flv",".vob",".mp4",".wav",".ogg",".avi",".mov",".m4p",".m4v"],
+            "documents":[".pdf",".csv"],
+            "textfiles":[".docx",".odt",".doc",".txt"]
+        },
+        "dirsToClean":["put dir here", "add more if you need to"]
+    }
+        
